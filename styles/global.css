@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 :root{
   --pink-light: #C59DD2;
   --pink-base: #9547A5;
@@ -21,19 +29,46 @@
 
   --font-family: "Raleway", sans-serif;
 
-  --title-lg: 700 3rem/auto var(--font-family);
-  --title-md: 700 2.5rem/auto var(--font-family);
-  --title-sm: 700 2rem/auto var(--font-family);
-  --title-xs: 700 1rem/auto var(--font-family);
+  --title-lg: 700 3rem var(--font-family);
+  --title-md: 700 2.5rem var(--font-family);
+  --title-sm: 700 2rem var(--font-family);
+  --title-xs: 700 1rem var(--font-family);
   --subtitle: 500 2rem/2 var(--font-family);
   --body-lg: 400 1.25rem/1.4 var(--font-family);
   --body-md: 400 1rem/1.4 var(--font-family);
   --body-sm: 400 0.875rem/1.4 var(--font-family);
   --body-xs: 400 0.75rem/1.4 var(--font-family);
-  --button: 700 0.875rem/auto var(--font-family);
-  --link: 500 0.875rem/auto var(--font-family);
-  --tag: 700 0.625rem/auto var(--font-family); 
+  --button: 700 0.875rem var(--font-family);
+  --link: 500 0.875rem var(--font-family);
+  --tag: 700 0.625rem var(--font-family); 
 
   --tag-transform: uppercase;
   --tag-letter-spacing: 0.05em;
+}
+
+body{
+  background-color: var(--shape-background);
+  font: var(--body-sm);
+}
+
+.container{
+  max-width: 70em;
+  margin-inline: auto;
+}
+
+a { 
+  text-decoration: none;
+  font: var(--button);
+
+  color: var(--text-title);
+}
+
+h1{
+  font: var(--title-lg);
+  color: var(--text-title);
+}
+
+p{
+  font: var(--body-lg);
+  color: var(--text-body);
 }
