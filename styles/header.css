@@ -1,11 +1,32 @@
-header.top{
+.top{
   display: flex;
   justify-content: space-between;
-  margin-inline: auto;
-
+  margin-left: auto;
+  width: 100%;
+  max-width: 80em;
   align-items: center;
-  margin-top: 3.5rem;
-  padding:0 1rem 0 1rem;
+  padding:0 3rem 0 3rem;
+  
+  position: absolute;
+  z-index: 3;
+  top: 3.5rem;
 
+  .mobile-logo{
+    display: none;
+  }
 
+}
+
+@media (width < 80em){
+  .top{
+    top: 1.25rem;
+    padding: 1.5rem;
+    .desktop-logo{
+      display: none;
+    }
+
+    .mobile-logo{
+      display: initial;
+    }
+  }
 }

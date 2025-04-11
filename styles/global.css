@@ -4,8 +4,6 @@
   padding: 0;
 }
 
-
-
 :root{
   --pink-light: #C59DD2;
   --pink-base: #9547A5;
@@ -33,7 +31,7 @@
   --title-md: 700 2.5rem var(--font-family);
   --title-sm: 700 2rem var(--font-family);
   --title-xs: 700 1rem var(--font-family);
-  --subtitle: 500 2rem/2 var(--font-family);
+  --subtitle: 500 1.75rem/2 var(--font-family);
   --body-lg: 400 1.25rem/1.4 var(--font-family);
   --body-md: 400 1rem/1.4 var(--font-family);
   --body-sm: 400 0.875rem/1.4 var(--font-family);
@@ -49,10 +47,11 @@
 body{
   background-color: var(--shape-background);
   font: var(--body-sm);
+  overflow-x: hidden;
 }
 
 .container{
-  max-width: 70em;
+  max-width: 80em;
   margin-inline: auto;
 }
 
@@ -72,3 +71,4 @@ p{
   font: var(--body-lg);
   color: var(--text-body);
 }
+
