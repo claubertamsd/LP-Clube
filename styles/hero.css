@@ -94,6 +94,7 @@
 
   & img {
     position: absolute;
+    transition: 300ms ease;
     height: 5rem;
     width: 5rem;
   }
@@ -102,16 +103,39 @@
     bottom: 0;
     left: 2rem;
     transform: rotate(100deg);
+    opacity: 0;
+    animation: fadeIn 400ms 2s both;
   }
   & img:nth-child(2) {
     top: 0;
     right: 33rem;
     transform: rotate(20deg);
+    opacity: 0;
+    animation: fadeIn .6s both;
+    
   }
   & img:nth-child(1) {
     bottom: 0;
     right: 2rem;
     transform: rotate(-15deg);
+    opacity: 0;
+    animation: fadeIn 200ms 1.5s both;
+  }
+
+  & img:nth-child(1):hover{
+    transform: rotate(18deg);
+  }
+  & img:nth-child(2):hover{
+    transform: rotate(30deg);
+  }
+  & img:nth-child(3):hover{
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes fadeIn {
+  100%{
+    opacity: 1;
   }
 }
 
