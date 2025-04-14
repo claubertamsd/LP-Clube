@@ -1,0 +1,120 @@
+#kitBook {
+  position: relative;
+  padding-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  .title {
+    z-index: 3;
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font: var(--title-sm);
+      color: var(--text-title);
+
+      & img {
+        filter: drop-shadow(0 0 10px var(--pink-base));
+        background: transparent;
+      }
+    }
+  }
+}
+
+.kit {
+  width: 100%;
+  .shape {
+    position: absolute;
+    width: 930px;
+    height: 930px;
+    left: auto;
+
+    background: var(--pink-dark);
+    opacity: 0.5;
+    filter: blur(300px);
+    z-index: -9999;
+  }
+
+  & .card-book {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 10rem;
+
+    & img {
+      position: absolute;
+      transition: all 0.5s ease;
+      width: 29rem;
+      top: 0;
+      z-index: 0;
+    }
+    & img:nth-child(1) {
+      width: 29rem;
+      left: 27%;
+      z-index: 1;
+    }
+
+    & img:nth-child(2) {
+      width: 12rem;
+      left: 35%;
+      top: 25rem;
+      transform: rotate(-8deg);
+    }
+ 
+    & img:nth-child(3) {
+      width: 12rem;
+      top: 1rem;
+      right: 35%;
+      z-index: -2;
+    }
+    & img:nth-child(4) {
+      width: 12rem;
+      right: 35%;
+      top: 1rem;
+      z-index: -1;
+    }
+    
+
+    & img:nth-child(1):hover ~ img:nth-child(2)  {
+      width: 12rem;
+      left: 17.5%;
+      top: 25rem;
+      transform: rotate(-8deg);
+      z-index: -1;
+    }
+
+    & img:nth-child(1):hover ~ img:nth-child(3) {
+      width: 12rem;
+      top: 1rem;
+      left: auto;
+      right: 10%;
+      transform: rotate(22deg);
+      z-index: -2;
+    }
+
+    & img:nth-child(1):hover ~ img:nth-child(4) {
+      width: 12rem;
+      top: -5rem;
+      left: auto;
+      right: 20%;
+      transform: rotate(12deg);
+      z-index: -1;
+    }
+  }
+}
+
+@media (width <= 80em) {
+  #kitBook {
+    .title {
+      h2 {
+        font: var(--h2);
+      }
+      p {
+        font: var(--body-sm);
+      }
+    }
+  }
+}

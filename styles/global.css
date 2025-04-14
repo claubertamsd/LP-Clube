@@ -31,6 +31,7 @@
   --title-md: 700 2.5rem var(--font-family);
   --title-sm: 700 2rem var(--font-family);
   --title-xs: 700 1rem var(--font-family);
+  --h2: 700 1.5rem var(--font-family);
   --subtitle: 500 1.75rem/2 var(--font-family);
   --body-lg: 400 1.25rem/1.4 var(--font-family);
   --body-md: 400 1rem/1.4 var(--font-family);
@@ -64,6 +65,11 @@ a {
 
 h1{
   font: var(--title-lg);
+  color: var(--text-title);
+}
+
+h2{
+  font: var(--title-sm);
   color: var(--text-title);
 }
 

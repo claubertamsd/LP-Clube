@@ -40,7 +40,7 @@
     overflow-x: hidden;
     background: var(--pink-low);
 
-    z-index: -5;
+    z-index: -9999;
   }
   .shape-left {
     left: calc(50% - 376px / 2 - 791px);
@@ -51,7 +51,6 @@
   }
 
   .shape-right {
-    width: 15rem;
     height: 15rem;
     left: calc(100% - 10rem);
     top: 22.875rem;
