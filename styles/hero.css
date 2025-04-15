@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
 
-  background: url(/assets/hero/hero-background.png) no-repeat bottom
+  background: url(./assets/hero/hero-background.png) no-repeat bottom
     center/cover;
   padding-bottom: 15rem;
 
