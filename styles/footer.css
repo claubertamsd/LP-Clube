@@ -9,6 +9,41 @@ footer {
   justify-content: space-between;
 
   padding-inline: 10rem;
+
+  .social-medias{
+    
+    .social{
+      display: flex;
+      
+
+      & a{
+        padding: .5rem;
+        height: 40px;
+        width: 40px;
+        
+      }
+
+      & a img{
+        height: 24px;
+        width: 24px;
+      }
+
+      & a:hover{
+        background-color: var(--blue-light);
+        border-radius: 50%;
+      }
+    }
+
+    
+  }
+
+  .divider{
+    height: 1px;
+    width: 100%;
+    border: 1px solid var(--shape-stroke);
+    margin-block: 1rem;
+  }
+
   & .links {
     display: flex;
     align-items: center;
